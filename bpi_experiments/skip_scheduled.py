@@ -7,5 +7,6 @@ class SkipLogAdvice(object):
 
 run_model(SkipLogAdvice,
           num_ticks=100,
-          num_start_messages=1)
+          num_start_messages=1,
+          outputfile="skipped_events.xes")
 
