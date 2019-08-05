@@ -1,0 +1,2323 @@
+<?xml version="1.0" ?>
+<!--Created by Python XES https://pypi.python.org/pypi/xes-->
+<!--(c) Jonathan Sumrall - http://www.sumrall.nl-->
+<log xes.creator="Python XES v1.2" xes.version="1.0" xmlns="http://www.xes-standard.org">
+  <extension name="Concept" prefix="concept" uri="http://www.xes-standard.org/concept.xesext"/>
+  <extension name="Lifecycle" prefix="lifecycle" uri="http://www.xes-standard.org/lifecycle.xesext"/>
+  <extension name="Time" prefix="time" uri="http://www.xes-standard.org/time.xesext"/>
+  <extension name="Organizational" prefix="org" uri="http://www.xes-standard.org/org.xesext"/>
+  <global scope="trace"/>
+  <global scope="event">
+    <string key="concept:name" value="string"/>
+    <string key="org:resource" value="string"/>
+  </global>
+  <classifier keys="org:resource" name="org:resource"/>
+  <classifier keys="concept:name" name="concept:name"/>
+  <string key="creator" value="Python XES v1.2"/>
+  <trace>
+    <event>
+      <string key="concept:name" value="A_submitted"/>
+      <string key="org:resource" value="Customer Service Actor 3"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_submitted"/>
+      <string key="org:resource" value="Customer Service Actor 3"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_partlysubmitted"/>
+      <string key="org:resource" value="Specialist Actor 2"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_preaccepted"/>
+      <string key="org:resource" value="Customer Service Actor 4"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_scheduled"/>
+      <string key="org:resource" value="Customer Service Actor 1"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_start"/>
+      <string key="org:resource" value="Customer Service Actor 5"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_complete"/>
+      <string key="org:resource" value="Customer Service Actor 2"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_start"/>
+      <string key="org:resource" value="Specialist Actor 1"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_accepted"/>
+      <string key="org:resource" value="Customer Service Actor 3"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_finalised"/>
+      <string key="org:resource" value="Specialist Actor 2"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_selected"/>
+      <string key="org:resource" value="Customer Service Actor 4"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_created"/>
+      <string key="org:resource" value="Customer Service Actor 1"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_sent"/>
+      <string key="org:resource" value="Customer Service Actor 5"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_scheduled"/>
+      <string key="org:resource" value="Customer Service Actor 2"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 1"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_wijzigen_contractgegevens_schedule"/>
+      <string key="org:resource" value="Specialist Actor 2"/>
+    </event>
+  </trace>
+  <trace>
+    <event>
+      <string key="concept:name" value="A_submitted"/>
+      <string key="org:resource" value="Customer Service Actor 9"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_partlysubmitted"/>
+      <string key="org:resource" value="Customer Service Actor 7"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_partlysubmitted"/>
+      <string key="org:resource" value="Customer Service Actor 7"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_afhandelen_leads_schedule"/>
+      <string key="org:resource" value="Customer Service Actor 10"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_afhandelen_leads_start"/>
+      <string key="org:resource" value="Customer Service Actor 6"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_preaccepted"/>
+      <string key="org:resource" value="Specialist Actor 3"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_scheduled"/>
+      <string key="org:resource" value="Customer Service Actor 8"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_start"/>
+      <string key="org:resource" value="Specialist Actor 4"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_complete"/>
+      <string key="org:resource" value="Customer Service Actor 9"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_start"/>
+      <string key="org:resource" value="Customer Service Actor 7"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_accepted"/>
+      <string key="org:resource" value="Customer Service Actor 10"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_finalised"/>
+      <string key="org:resource" value="Customer Service Actor 6"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_selected"/>
+      <string key="org:resource" value="Specialist Actor 3"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_created"/>
+      <string key="org:resource" value="Customer Service Actor 8"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_sent"/>
+      <string key="org:resource" value="Specialist Actor 4"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_scheduled"/>
+      <string key="org:resource" value="Customer Service Actor 9"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_complete"/>
+      <string key="org:resource" value="Customer Service Actor 7"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_cancelled"/>
+      <string key="org:resource" value="Customer Service Actor 10"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_complete"/>
+      <string key="org:resource" value="Customer Service Actor 6"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_start"/>
+      <string key="org:resource" value="Specialist Actor 3"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_complete"/>
+      <string key="org:resource" value="Customer Service Actor 8"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_start"/>
+      <string key="org:resource" value="Specialist Actor 4"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_cancelled"/>
+      <string key="org:resource" value="Customer Service Actor 9"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_created"/>
+      <string key="org:resource" value="Customer Service Actor 7"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_sent"/>
+      <string key="org:resource" value="Customer Service Actor 10"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_scheduled"/>
+      <string key="org:resource" value="Customer Service Actor 6"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 3"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_start"/>
+      <string key="org:resource" value="Specialist Actor 4"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_declined"/>
+      <string key="org:resource" value="Specialist Actor 3"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 4"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_wijzigen_contractgegevens_schedule"/>
+      <string key="org:resource" value="Specialist Actor 3"/>
+    </event>
+  </trace>
+  <trace>
+    <event>
+      <string key="concept:name" value="A_submitted"/>
+      <string key="org:resource" value="Specialist Actor 5"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_partlysubmitted"/>
+      <string key="org:resource" value="Customer Service Actor 12"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_beoordelen_fraude_schedule"/>
+      <string key="org:resource" value="Customer Service Actor 15"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_beoordelen_fraude_schedule"/>
+      <string key="org:resource" value="Customer Service Actor 15"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_beoordelen_fraude_start"/>
+      <string key="org:resource" value="Customer Service Actor 11"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_beoordelen_fraude_complete"/>
+      <string key="org:resource" value="Customer Service Actor 14"/>
+    </event>
+  </trace>
+  <trace>
+    <event>
+      <string key="concept:name" value="A_submitted"/>
+      <string key="org:resource" value="Customer Service Actor 17"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_partlysubmitted"/>
+      <string key="org:resource" value="Customer Service Actor 20"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_preaccepted"/>
+      <string key="org:resource" value="Customer Service Actor 16"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_preaccepted"/>
+      <string key="org:resource" value="Customer Service Actor 16"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_scheduled"/>
+      <string key="org:resource" value="Specialist Actor 8"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_start"/>
+      <string key="org:resource" value="Customer Service Actor 19"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_accepted"/>
+      <string key="org:resource" value="Customer Service Actor 18"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_finalised"/>
+      <string key="org:resource" value="Specialist Actor 7"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_selected"/>
+      <string key="org:resource" value="Customer Service Actor 17"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_created"/>
+      <string key="org:resource" value="Customer Service Actor 20"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_sent"/>
+      <string key="org:resource" value="Customer Service Actor 16"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_scheduled"/>
+      <string key="org:resource" value="Specialist Actor 8"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 7"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_start"/>
+      <string key="org:resource" value="Specialist Actor 8"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_declined"/>
+      <string key="org:resource" value="Specialist Actor 7"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 8"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_start"/>
+      <string key="org:resource" value="Specialist Actor 7"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_approved"/>
+      <string key="org:resource" value="Specialist Actor 8"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_registered"/>
+      <string key="org:resource" value="Specialist Actor 7"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_activated"/>
+      <string key="org:resource" value="Specialist Actor 8"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_accepted"/>
+      <string key="org:resource" value="Specialist Actor 7"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 8"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_start"/>
+      <string key="org:resource" value="Specialist Actor 7"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_approved"/>
+      <string key="org:resource" value="Specialist Actor 8"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_registered"/>
+      <string key="org:resource" value="Specialist Actor 7"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_activated"/>
+      <string key="org:resource" value="Specialist Actor 8"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_accepted"/>
+      <string key="org:resource" value="Specialist Actor 7"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 8"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_wijzigen_contractgegevens_schedule"/>
+      <string key="org:resource" value="Specialist Actor 7"/>
+    </event>
+  </trace>
+  <trace>
+    <event>
+      <string key="concept:name" value="A_submitted"/>
+      <string key="org:resource" value="Customer Service Actor 22"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_partlysubmitted"/>
+      <string key="org:resource" value="Specialist Actor 9"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_afhandelen_leads_schedule"/>
+      <string key="org:resource" value="Customer Service Actor 21"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_afhandelen_leads_schedule"/>
+      <string key="org:resource" value="Customer Service Actor 21"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_afhandelen_leads_start"/>
+      <string key="org:resource" value="Customer Service Actor 25"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_afhandelen_leads_complete"/>
+      <string key="org:resource" value="Customer Service Actor 24"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_start"/>
+      <string key="org:resource" value="Customer Service Actor 23"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_accepted"/>
+      <string key="org:resource" value="Specialist Actor 10"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_finalised"/>
+      <string key="org:resource" value="Customer Service Actor 22"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_selected"/>
+      <string key="org:resource" value="Specialist Actor 9"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_created"/>
+      <string key="org:resource" value="Customer Service Actor 21"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_sent"/>
+      <string key="org:resource" value="Customer Service Actor 25"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_scheduled"/>
+      <string key="org:resource" value="Customer Service Actor 24"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_complete"/>
+      <string key="org:resource" value="Customer Service Actor 23"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_start"/>
+      <string key="org:resource" value="Specialist Actor 10"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_sent_back"/>
+      <string key="org:resource" value="Customer Service Actor 22"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_scheduled"/>
+      <string key="org:resource" value="Specialist Actor 9"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_complete"/>
+      <string key="org:resource" value="Customer Service Actor 21"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_start"/>
+      <string key="org:resource" value="Customer Service Actor 25"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_complete"/>
+      <string key="org:resource" value="Customer Service Actor 24"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_complete"/>
+      <string key="org:resource" value="Customer Service Actor 23"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_start"/>
+      <string key="org:resource" value="Specialist Actor 10"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_approved"/>
+      <string key="org:resource" value="Specialist Actor 9"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_registered"/>
+      <string key="org:resource" value="Specialist Actor 10"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_activated"/>
+      <string key="org:resource" value="Specialist Actor 9"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_accepted"/>
+      <string key="org:resource" value="Specialist Actor 10"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 9"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_wijzigen_contractgegevens_schedule"/>
+      <string key="org:resource" value="Specialist Actor 10"/>
+    </event>
+  </trace>
+  <trace>
+    <event>
+      <string key="concept:name" value="A_submitted"/>
+      <string key="org:resource" value="Customer Service Actor 27"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_partlysubmitted"/>
+      <string key="org:resource" value="Specialist Actor 11"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_preaccepted"/>
+      <string key="org:resource" value="Customer Service Actor 26"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_scheduled"/>
+      <string key="org:resource" value="Customer Service Actor 30"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_scheduled"/>
+      <string key="org:resource" value="Customer Service Actor 30"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_start"/>
+      <string key="org:resource" value="Customer Service Actor 29"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_accepted"/>
+      <string key="org:resource" value="Customer Service Actor 28"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_finalised"/>
+      <string key="org:resource" value="Specialist Actor 12"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_selected"/>
+      <string key="org:resource" value="Customer Service Actor 27"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_created"/>
+      <string key="org:resource" value="Specialist Actor 11"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_sent"/>
+      <string key="org:resource" value="Customer Service Actor 26"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_scheduled"/>
+      <string key="org:resource" value="Customer Service Actor 30"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_complete"/>
+      <string key="org:resource" value="Customer Service Actor 29"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_start"/>
+      <string key="org:resource" value="Customer Service Actor 28"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_complete"/>
+      <string key="org:resource" value="Specialist Actor 12"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_start"/>
+      <string key="org:resource" value="Specialist Actor 11"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_approved"/>
+      <string key="org:resource" value="Specialist Actor 12"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_registered"/>
+      <string key="org:resource" value="Specialist Actor 11"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_activated"/>
+      <string key="org:resource" value="Specialist Actor 12"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_accepted"/>
+      <string key="org:resource" value="Specialist Actor 11"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 12"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_wijzigen_contractgegevens_schedule"/>
+      <string key="org:resource" value="Specialist Actor 11"/>
+    </event>
+  </trace>
+  <trace>
+    <event>
+      <string key="concept:name" value="A_submitted"/>
+      <string key="org:resource" value="Customer Service Actor 32"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_partlysubmitted"/>
+      <string key="org:resource" value="Specialist Actor 13"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_beoordelen_fraude_schedule"/>
+      <string key="org:resource" value="Customer Service Actor 31"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_beoordelen_fraude_start"/>
+      <string key="org:resource" value="Customer Service Actor 35"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_beoordelen_fraude_start"/>
+      <string key="org:resource" value="Customer Service Actor 35"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_declined"/>
+      <string key="org:resource" value="Customer Service Actor 34"/>
+    </event>
+  </trace>
+  <trace>
+    <event>
+      <string key="concept:name" value="A_submitted"/>
+      <string key="org:resource" value="Customer Service Actor 37"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_partlysubmitted"/>
+      <string key="org:resource" value="Specialist Actor 15"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_afhandelen_leads_schedule"/>
+      <string key="org:resource" value="Customer Service Actor 36"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_afhandelen_leads_start"/>
+      <string key="org:resource" value="Customer Service Actor 40"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_afhandelen_leads_start"/>
+      <string key="org:resource" value="Customer Service Actor 40"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_preaccepted"/>
+      <string key="org:resource" value="Customer Service Actor 39"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_scheduled"/>
+      <string key="org:resource" value="Customer Service Actor 38"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_start"/>
+      <string key="org:resource" value="Specialist Actor 16"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_accepted"/>
+      <string key="org:resource" value="Customer Service Actor 37"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_finalised"/>
+      <string key="org:resource" value="Specialist Actor 15"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_selected"/>
+      <string key="org:resource" value="Customer Service Actor 36"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_created"/>
+      <string key="org:resource" value="Customer Service Actor 40"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_sent"/>
+      <string key="org:resource" value="Customer Service Actor 39"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_scheduled"/>
+      <string key="org:resource" value="Customer Service Actor 38"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 16"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_start"/>
+      <string key="org:resource" value="Specialist Actor 15"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_approved"/>
+      <string key="org:resource" value="Specialist Actor 16"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_registered"/>
+      <string key="org:resource" value="Specialist Actor 15"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_activated"/>
+      <string key="org:resource" value="Specialist Actor 16"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_accepted"/>
+      <string key="org:resource" value="Specialist Actor 15"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 16"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_wijzigen_contractgegevens_schedule"/>
+      <string key="org:resource" value="Specialist Actor 15"/>
+    </event>
+  </trace>
+  <trace>
+    <event>
+      <string key="concept:name" value="A_submitted"/>
+      <string key="org:resource" value="Customer Service Actor 42"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_partlysubmitted"/>
+      <string key="org:resource" value="Specialist Actor 17"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_preaccepted"/>
+      <string key="org:resource" value="Customer Service Actor 41"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_scheduled"/>
+      <string key="org:resource" value="Customer Service Actor 45"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_start"/>
+      <string key="org:resource" value="Customer Service Actor 44"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_start"/>
+      <string key="org:resource" value="Customer Service Actor 44"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_complete"/>
+      <string key="org:resource" value="Customer Service Actor 43"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_start"/>
+      <string key="org:resource" value="Specialist Actor 18"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_accepted"/>
+      <string key="org:resource" value="Customer Service Actor 42"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_finalised"/>
+      <string key="org:resource" value="Specialist Actor 17"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_selected"/>
+      <string key="org:resource" value="Customer Service Actor 41"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_created"/>
+      <string key="org:resource" value="Customer Service Actor 45"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_sent"/>
+      <string key="org:resource" value="Customer Service Actor 44"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_scheduled"/>
+      <string key="org:resource" value="Customer Service Actor 43"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 18"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_start"/>
+      <string key="org:resource" value="Specialist Actor 17"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_declined"/>
+      <string key="org:resource" value="Specialist Actor 18"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 17"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_wijzigen_contractgegevens_schedule"/>
+      <string key="org:resource" value="Specialist Actor 18"/>
+    </event>
+  </trace>
+  <trace>
+    <event>
+      <string key="concept:name" value="A_submitted"/>
+      <string key="org:resource" value="Specialist Actor 19"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_partlysubmitted"/>
+      <string key="org:resource" value="Customer Service Actor 46"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_beoordelen_fraude_schedule"/>
+      <string key="org:resource" value="Customer Service Actor 50"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_beoordelen_fraude_start"/>
+      <string key="org:resource" value="Specialist Actor 20"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_beoordelen_fraude_complete"/>
+      <string key="org:resource" value="Customer Service Actor 49"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_beoordelen_fraude_complete"/>
+      <string key="org:resource" value="Customer Service Actor 49"/>
+    </event>
+  </trace>
+  <trace>
+    <event>
+      <string key="concept:name" value="A_submitted"/>
+      <string key="org:resource" value="Customer Service Actor 54"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_partlysubmitted"/>
+      <string key="org:resource" value="Customer Service Actor 53"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_preaccepted"/>
+      <string key="org:resource" value="Specialist Actor 21"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_scheduled"/>
+      <string key="org:resource" value="Specialist Actor 22"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_start"/>
+      <string key="org:resource" value="Customer Service Actor 52"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_complete"/>
+      <string key="org:resource" value="Customer Service Actor 51"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_complete"/>
+      <string key="org:resource" value="Customer Service Actor 51"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_start"/>
+      <string key="org:resource" value="Customer Service Actor 55"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_accepted"/>
+      <string key="org:resource" value="Customer Service Actor 54"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_finalised"/>
+      <string key="org:resource" value="Customer Service Actor 53"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_selected"/>
+      <string key="org:resource" value="Specialist Actor 21"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_created"/>
+      <string key="org:resource" value="Specialist Actor 22"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_sent"/>
+      <string key="org:resource" value="Customer Service Actor 52"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_scheduled"/>
+      <string key="org:resource" value="Customer Service Actor 51"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_complete"/>
+      <string key="org:resource" value="Customer Service Actor 55"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_start"/>
+      <string key="org:resource" value="Customer Service Actor 54"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_sent_back"/>
+      <string key="org:resource" value="Customer Service Actor 53"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_scheduled"/>
+      <string key="org:resource" value="Specialist Actor 21"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_complete"/>
+      <string key="org:resource" value="Specialist Actor 22"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_complete"/>
+      <string key="org:resource" value="Customer Service Actor 52"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_complete"/>
+      <string key="org:resource" value="Customer Service Actor 51"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_start"/>
+      <string key="org:resource" value="Customer Service Actor 55"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_complete"/>
+      <string key="org:resource" value="Customer Service Actor 54"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_complete"/>
+      <string key="org:resource" value="Customer Service Actor 53"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_start"/>
+      <string key="org:resource" value="Specialist Actor 21"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_approved"/>
+      <string key="org:resource" value="Specialist Actor 22"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_registered"/>
+      <string key="org:resource" value="Specialist Actor 21"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_activated"/>
+      <string key="org:resource" value="Specialist Actor 22"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_accepted"/>
+      <string key="org:resource" value="Specialist Actor 21"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 22"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_wijzigen_contractgegevens_schedule"/>
+      <string key="org:resource" value="Specialist Actor 21"/>
+    </event>
+  </trace>
+  <trace>
+    <event>
+      <string key="concept:name" value="A_submitted"/>
+      <string key="org:resource" value="Specialist Actor 23"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_partlysubmitted"/>
+      <string key="org:resource" value="Customer Service Actor 60"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_afhandelen_leads_schedule"/>
+      <string key="org:resource" value="Customer Service Actor 57"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_afhandelen_leads_start"/>
+      <string key="org:resource" value="Customer Service Actor 56"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_preaccepted"/>
+      <string key="org:resource" value="Customer Service Actor 59"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_scheduled"/>
+      <string key="org:resource" value="Customer Service Actor 58"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_start"/>
+      <string key="org:resource" value="Specialist Actor 24"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_accepted"/>
+      <string key="org:resource" value="Specialist Actor 23"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_accepted"/>
+      <string key="org:resource" value="Specialist Actor 23"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_finalised"/>
+      <string key="org:resource" value="Customer Service Actor 60"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_selected"/>
+      <string key="org:resource" value="Customer Service Actor 57"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_created"/>
+      <string key="org:resource" value="Customer Service Actor 56"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_sent"/>
+      <string key="org:resource" value="Customer Service Actor 59"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_scheduled"/>
+      <string key="org:resource" value="Customer Service Actor 58"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 24"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_start"/>
+      <string key="org:resource" value="Specialist Actor 23"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_complete"/>
+      <string key="org:resource" value="Customer Service Actor 60"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_start"/>
+      <string key="org:resource" value="Customer Service Actor 57"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_sent_back"/>
+      <string key="org:resource" value="Customer Service Actor 56"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_scheduled"/>
+      <string key="org:resource" value="Customer Service Actor 59"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_complete"/>
+      <string key="org:resource" value="Customer Service Actor 58"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_complete"/>
+      <string key="org:resource" value="Specialist Actor 24"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_complete"/>
+      <string key="org:resource" value="Specialist Actor 23"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_complete"/>
+      <string key="org:resource" value="Customer Service Actor 60"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_start"/>
+      <string key="org:resource" value="Specialist Actor 24"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_declined"/>
+      <string key="org:resource" value="Specialist Actor 23"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 24"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_start"/>
+      <string key="org:resource" value="Specialist Actor 23"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_declined"/>
+      <string key="org:resource" value="Specialist Actor 24"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 23"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_wijzigen_contractgegevens_schedule"/>
+      <string key="org:resource" value="Specialist Actor 24"/>
+    </event>
+  </trace>
+  <trace>
+    <event>
+      <string key="concept:name" value="A_submitted"/>
+      <string key="org:resource" value="Specialist Actor 26"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_partlysubmitted"/>
+      <string key="org:resource" value="Customer Service Actor 63"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_afhandelen_leads_schedule"/>
+      <string key="org:resource" value="Customer Service Actor 61"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_afhandelen_leads_start"/>
+      <string key="org:resource" value="Customer Service Actor 64"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_afhandelen_leads_complete"/>
+      <string key="org:resource" value="Specialist Actor 25"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_afhandelen_leads_complete"/>
+      <string key="org:resource" value="Specialist Actor 25"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_afhandelen_leads_start"/>
+      <string key="org:resource" value="Customer Service Actor 62"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_preaccepted"/>
+      <string key="org:resource" value="Customer Service Actor 65"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_scheduled"/>
+      <string key="org:resource" value="Specialist Actor 26"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_start"/>
+      <string key="org:resource" value="Customer Service Actor 63"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_accepted"/>
+      <string key="org:resource" value="Customer Service Actor 61"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_finalised"/>
+      <string key="org:resource" value="Customer Service Actor 64"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_selected"/>
+      <string key="org:resource" value="Specialist Actor 25"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_created"/>
+      <string key="org:resource" value="Customer Service Actor 62"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_sent"/>
+      <string key="org:resource" value="Customer Service Actor 65"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_scheduled"/>
+      <string key="org:resource" value="Specialist Actor 26"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 25"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_start"/>
+      <string key="org:resource" value="Specialist Actor 26"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_complete"/>
+      <string key="org:resource" value="Customer Service Actor 63"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_start"/>
+      <string key="org:resource" value="Specialist Actor 25"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_declined"/>
+      <string key="org:resource" value="Specialist Actor 26"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 25"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_wijzigen_contractgegevens_schedule"/>
+      <string key="org:resource" value="Specialist Actor 26"/>
+    </event>
+  </trace>
+  <trace>
+    <event>
+      <string key="concept:name" value="A_submitted"/>
+      <string key="org:resource" value="Customer Service Actor 69"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_partlysubmitted"/>
+      <string key="org:resource" value="Customer Service Actor 68"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_afhandelen_leads_schedule"/>
+      <string key="org:resource" value="Customer Service Actor 67"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_afhandelen_leads_start"/>
+      <string key="org:resource" value="Customer Service Actor 70"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_preaccepted"/>
+      <string key="org:resource" value="Specialist Actor 28"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_scheduled"/>
+      <string key="org:resource" value="Customer Service Actor 66"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_start"/>
+      <string key="org:resource" value="Specialist Actor 27"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_accepted"/>
+      <string key="org:resource" value="Customer Service Actor 69"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_finalised"/>
+      <string key="org:resource" value="Customer Service Actor 68"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_finalised"/>
+      <string key="org:resource" value="Customer Service Actor 68"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_selected"/>
+      <string key="org:resource" value="Customer Service Actor 67"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_created"/>
+      <string key="org:resource" value="Customer Service Actor 70"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_sent"/>
+      <string key="org:resource" value="Specialist Actor 28"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_scheduled"/>
+      <string key="org:resource" value="Customer Service Actor 66"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 27"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_start"/>
+      <string key="org:resource" value="Customer Service Actor 69"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_sent_back"/>
+      <string key="org:resource" value="Customer Service Actor 68"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_scheduled"/>
+      <string key="org:resource" value="Customer Service Actor 67"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_complete"/>
+      <string key="org:resource" value="Customer Service Actor 70"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_start"/>
+      <string key="org:resource" value="Specialist Actor 28"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_complete"/>
+      <string key="org:resource" value="Customer Service Actor 66"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_complete"/>
+      <string key="org:resource" value="Specialist Actor 27"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_start"/>
+      <string key="org:resource" value="Customer Service Actor 69"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_sent_back"/>
+      <string key="org:resource" value="Customer Service Actor 68"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_scheduled"/>
+      <string key="org:resource" value="Customer Service Actor 67"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_complete"/>
+      <string key="org:resource" value="Customer Service Actor 70"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_start"/>
+      <string key="org:resource" value="Specialist Actor 28"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_cancelled"/>
+      <string key="org:resource" value="Customer Service Actor 66"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_created"/>
+      <string key="org:resource" value="Specialist Actor 27"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_sent"/>
+      <string key="org:resource" value="Customer Service Actor 69"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_scheduled"/>
+      <string key="org:resource" value="Customer Service Actor 68"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_complete"/>
+      <string key="org:resource" value="Customer Service Actor 67"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_cancelled"/>
+      <string key="org:resource" value="Customer Service Actor 70"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 28"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_start"/>
+      <string key="org:resource" value="Customer Service Actor 66"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 27"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_start"/>
+      <string key="org:resource" value="Customer Service Actor 69"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_complete"/>
+      <string key="org:resource" value="Customer Service Actor 68"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_start"/>
+      <string key="org:resource" value="Specialist Actor 28"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_declined"/>
+      <string key="org:resource" value="Specialist Actor 27"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 28"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_start"/>
+      <string key="org:resource" value="Specialist Actor 27"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_complete"/>
+      <string key="org:resource" value="Customer Service Actor 69"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_start"/>
+      <string key="org:resource" value="Customer Service Actor 68"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_complete"/>
+      <string key="org:resource" value="Customer Service Actor 67"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_start"/>
+      <string key="org:resource" value="Specialist Actor 28"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_declined"/>
+      <string key="org:resource" value="Specialist Actor 27"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 28"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_start"/>
+      <string key="org:resource" value="Specialist Actor 27"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_complete"/>
+      <string key="org:resource" value="Customer Service Actor 69"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_start"/>
+      <string key="org:resource" value="Customer Service Actor 68"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_complete"/>
+      <string key="org:resource" value="Customer Service Actor 67"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_start"/>
+      <string key="org:resource" value="Specialist Actor 28"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_approved"/>
+      <string key="org:resource" value="Specialist Actor 27"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_registered"/>
+      <string key="org:resource" value="Specialist Actor 28"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_activated"/>
+      <string key="org:resource" value="Specialist Actor 27"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_accepted"/>
+      <string key="org:resource" value="Specialist Actor 28"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 27"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_start"/>
+      <string key="org:resource" value="Specialist Actor 28"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_declined"/>
+      <string key="org:resource" value="Specialist Actor 27"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 28"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_wijzigen_contractgegevens_schedule"/>
+      <string key="org:resource" value="Specialist Actor 27"/>
+    </event>
+  </trace>
+  <trace>
+    <event>
+      <string key="concept:name" value="A_submitted"/>
+      <string key="org:resource" value="Customer Service Actor 74"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_partlysubmitted"/>
+      <string key="org:resource" value="Customer Service Actor 73"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_beoordelen_fraude_schedule"/>
+      <string key="org:resource" value="Customer Service Actor 72"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_beoordelen_fraude_start"/>
+      <string key="org:resource" value="Customer Service Actor 75"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_beoordelen_fraude_complete"/>
+      <string key="org:resource" value="Specialist Actor 30"/>
+    </event>
+  </trace>
+  <trace>
+    <event>
+      <string key="concept:name" value="A_submitted"/>
+      <string key="org:resource" value="Customer Service Actor 80"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_partlysubmitted"/>
+      <string key="org:resource" value="Customer Service Actor 79"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_preaccepted"/>
+      <string key="org:resource" value="Customer Service Actor 78"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_scheduled"/>
+      <string key="org:resource" value="Customer Service Actor 77"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_start"/>
+      <string key="org:resource" value="Customer Service Actor 76"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 32"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_cancelled"/>
+      <string key="org:resource" value="Specialist Actor 31"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_cancelled"/>
+      <string key="org:resource" value="Specialist Actor 31"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_complete"/>
+      <string key="org:resource" value="Customer Service Actor 80"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_start"/>
+      <string key="org:resource" value="Customer Service Actor 79"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_accepted"/>
+      <string key="org:resource" value="Customer Service Actor 78"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_finalised"/>
+      <string key="org:resource" value="Customer Service Actor 77"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_selected"/>
+      <string key="org:resource" value="Customer Service Actor 76"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_created"/>
+      <string key="org:resource" value="Specialist Actor 32"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_sent"/>
+      <string key="org:resource" value="Specialist Actor 31"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_scheduled"/>
+      <string key="org:resource" value="Customer Service Actor 80"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 32"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_start"/>
+      <string key="org:resource" value="Specialist Actor 31"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_approved"/>
+      <string key="org:resource" value="Specialist Actor 32"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_registered"/>
+      <string key="org:resource" value="Specialist Actor 31"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_activated"/>
+      <string key="org:resource" value="Specialist Actor 32"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_accepted"/>
+      <string key="org:resource" value="Specialist Actor 31"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 32"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_start"/>
+      <string key="org:resource" value="Specialist Actor 31"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_approved"/>
+      <string key="org:resource" value="Specialist Actor 32"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_registered"/>
+      <string key="org:resource" value="Specialist Actor 31"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_activated"/>
+      <string key="org:resource" value="Specialist Actor 32"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_accepted"/>
+      <string key="org:resource" value="Specialist Actor 31"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 32"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_wijzigen_contractgegevens_schedule"/>
+      <string key="org:resource" value="Specialist Actor 31"/>
+    </event>
+  </trace>
+  <trace>
+    <event>
+      <string key="concept:name" value="A_submitted"/>
+      <string key="org:resource" value="Customer Service Actor 85"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_partlysubmitted"/>
+      <string key="org:resource" value="Customer Service Actor 84"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_preaccepted"/>
+      <string key="org:resource" value="Customer Service Actor 83"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_scheduled"/>
+      <string key="org:resource" value="Customer Service Actor 82"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_start"/>
+      <string key="org:resource" value="Customer Service Actor 81"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 34"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_cancelled"/>
+      <string key="org:resource" value="Specialist Actor 33"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_complete"/>
+      <string key="org:resource" value="Customer Service Actor 85"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_start"/>
+      <string key="org:resource" value="Customer Service Actor 84"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_complete"/>
+      <string key="org:resource" value="Customer Service Actor 83"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_cancelled"/>
+      <string key="org:resource" value="Customer Service Actor 82"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_complete"/>
+      <string key="org:resource" value="Customer Service Actor 81"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_start"/>
+      <string key="org:resource" value="Specialist Actor 34"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_accepted"/>
+      <string key="org:resource" value="Specialist Actor 33"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_finalised"/>
+      <string key="org:resource" value="Customer Service Actor 85"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_selected"/>
+      <string key="org:resource" value="Customer Service Actor 84"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_selected"/>
+      <string key="org:resource" value="Customer Service Actor 84"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_created"/>
+      <string key="org:resource" value="Customer Service Actor 83"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_sent"/>
+      <string key="org:resource" value="Customer Service Actor 82"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_scheduled"/>
+      <string key="org:resource" value="Customer Service Actor 81"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 34"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_start"/>
+      <string key="org:resource" value="Specialist Actor 33"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_complete"/>
+      <string key="org:resource" value="Customer Service Actor 85"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_cancelled"/>
+      <string key="org:resource" value="Customer Service Actor 84"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_complete"/>
+      <string key="org:resource" value="Customer Service Actor 83"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_cancelled"/>
+      <string key="org:resource" value="Customer Service Actor 82"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_complete"/>
+      <string key="org:resource" value="Customer Service Actor 81"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_start"/>
+      <string key="org:resource" value="Specialist Actor 34"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_complete"/>
+      <string key="org:resource" value="Specialist Actor 33"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_start"/>
+      <string key="org:resource" value="Specialist Actor 34"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_declined"/>
+      <string key="org:resource" value="Specialist Actor 33"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 34"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_start"/>
+      <string key="org:resource" value="Specialist Actor 33"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_complete"/>
+      <string key="org:resource" value="Customer Service Actor 85"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_start"/>
+      <string key="org:resource" value="Customer Service Actor 84"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_complete"/>
+      <string key="org:resource" value="Customer Service Actor 83"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_start"/>
+      <string key="org:resource" value="Customer Service Actor 82"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_complete"/>
+      <string key="org:resource" value="Customer Service Actor 81"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_start"/>
+      <string key="org:resource" value="Specialist Actor 34"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_complete"/>
+      <string key="org:resource" value="Specialist Actor 33"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_start"/>
+      <string key="org:resource" value="Specialist Actor 34"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_approved"/>
+      <string key="org:resource" value="Specialist Actor 33"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_registered"/>
+      <string key="org:resource" value="Specialist Actor 34"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_activated"/>
+      <string key="org:resource" value="Specialist Actor 33"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_accepted"/>
+      <string key="org:resource" value="Specialist Actor 34"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 33"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_start"/>
+      <string key="org:resource" value="Specialist Actor 34"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_complete"/>
+      <string key="org:resource" value="Specialist Actor 33"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_start"/>
+      <string key="org:resource" value="Customer Service Actor 85"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_complete"/>
+      <string key="org:resource" value="Customer Service Actor 84"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_start"/>
+      <string key="org:resource" value="Customer Service Actor 83"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_complete"/>
+      <string key="org:resource" value="Customer Service Actor 82"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_start"/>
+      <string key="org:resource" value="Customer Service Actor 81"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_complete"/>
+      <string key="org:resource" value="Specialist Actor 34"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_start"/>
+      <string key="org:resource" value="Specialist Actor 33"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_complete"/>
+      <string key="org:resource" value="Customer Service Actor 85"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_start"/>
+      <string key="org:resource" value="Customer Service Actor 84"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_complete"/>
+      <string key="org:resource" value="Customer Service Actor 83"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_start"/>
+      <string key="org:resource" value="Specialist Actor 34"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_declined"/>
+      <string key="org:resource" value="Specialist Actor 33"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 34"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_start"/>
+      <string key="org:resource" value="Specialist Actor 33"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_declined"/>
+      <string key="org:resource" value="Specialist Actor 34"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 33"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_start"/>
+      <string key="org:resource" value="Specialist Actor 34"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_approved"/>
+      <string key="org:resource" value="Specialist Actor 33"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_registered"/>
+      <string key="org:resource" value="Specialist Actor 34"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_activated"/>
+      <string key="org:resource" value="Specialist Actor 33"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_accepted"/>
+      <string key="org:resource" value="Specialist Actor 34"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 33"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_wijzigen_contractgegevens_schedule"/>
+      <string key="org:resource" value="Specialist Actor 34"/>
+    </event>
+  </trace>
+  <trace>
+    <event>
+      <string key="concept:name" value="A_submitted"/>
+      <string key="org:resource" value="Specialist Actor 36"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_partlysubmitted"/>
+      <string key="org:resource" value="Customer Service Actor 89"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_beoordelen_fraude_schedule"/>
+      <string key="org:resource" value="Customer Service Actor 90"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_beoordelen_fraude_start"/>
+      <string key="org:resource" value="Specialist Actor 35"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_declined"/>
+      <string key="org:resource" value="Customer Service Actor 86"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_declined"/>
+      <string key="org:resource" value="Customer Service Actor 86"/>
+    </event>
+  </trace>
+  <trace>
+    <event>
+      <string key="concept:name" value="A_submitted"/>
+      <string key="org:resource" value="Customer Service Actor 94"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_partlysubmitted"/>
+      <string key="org:resource" value="Specialist Actor 37"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_beoordelen_fraude_schedule"/>
+      <string key="org:resource" value="Customer Service Actor 93"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_beoordelen_fraude_start"/>
+      <string key="org:resource" value="Specialist Actor 38"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_declined"/>
+      <string key="org:resource" value="Customer Service Actor 92"/>
+    </event>
+  </trace>
+  <trace>
+    <event>
+      <string key="concept:name" value="A_submitted"/>
+      <string key="org:resource" value="Customer Service Actor 100"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_partlysubmitted"/>
+      <string key="org:resource" value="Specialist Actor 39"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_afhandelen_leads_schedule"/>
+      <string key="org:resource" value="Customer Service Actor 99"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_afhandelen_leads_start"/>
+      <string key="org:resource" value="Customer Service Actor 96"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_afhandelen_leads_complete"/>
+      <string key="org:resource" value="Customer Service Actor 98"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_afhandelen_leads_start"/>
+      <string key="org:resource" value="Customer Service Actor 97"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_afhandelen_leads_complete"/>
+      <string key="org:resource" value="Specialist Actor 40"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_start"/>
+      <string key="org:resource" value="Customer Service Actor 100"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_accepted"/>
+      <string key="org:resource" value="Specialist Actor 39"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_finalised"/>
+      <string key="org:resource" value="Customer Service Actor 99"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_selected"/>
+      <string key="org:resource" value="Customer Service Actor 96"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_created"/>
+      <string key="org:resource" value="Customer Service Actor 98"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_created"/>
+      <string key="org:resource" value="Customer Service Actor 98"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_sent"/>
+      <string key="org:resource" value="Customer Service Actor 97"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_scheduled"/>
+      <string key="org:resource" value="Specialist Actor 40"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 39"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_wijzigen_contractgegevens_schedule"/>
+      <string key="org:resource" value="Specialist Actor 40"/>
+    </event>
+  </trace>
+  <trace>
+    <event>
+      <string key="concept:name" value="A_submitted"/>
+      <string key="org:resource" value="Specialist Actor 41"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_partlysubmitted"/>
+      <string key="org:resource" value="Customer Service Actor 102"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_beoordelen_fraude_schedule"/>
+      <string key="org:resource" value="Customer Service Actor 105"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_beoordelen_fraude_start"/>
+      <string key="org:resource" value="Customer Service Actor 101"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_beoordelen_fraude_complete"/>
+      <string key="org:resource" value="Customer Service Actor 104"/>
+    </event>
+  </trace>
+  <trace>
+    <event>
+      <string key="concept:name" value="A_submitted"/>
+      <string key="org:resource" value="Customer Service Actor 110"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_partlysubmitted"/>
+      <string key="org:resource" value="Specialist Actor 44"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_preaccepted"/>
+      <string key="org:resource" value="Customer Service Actor 106"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_scheduled"/>
+      <string key="org:resource" value="Customer Service Actor 107"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_start"/>
+      <string key="org:resource" value="Customer Service Actor 109"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_accepted"/>
+      <string key="org:resource" value="Customer Service Actor 108"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_finalised"/>
+      <string key="org:resource" value="Specialist Actor 43"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_selected"/>
+      <string key="org:resource" value="Customer Service Actor 110"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_created"/>
+      <string key="org:resource" value="Specialist Actor 44"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_sent"/>
+      <string key="org:resource" value="Customer Service Actor 106"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_sent"/>
+      <string key="org:resource" value="Customer Service Actor 106"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_scheduled"/>
+      <string key="org:resource" value="Customer Service Actor 107"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 43"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_start"/>
+      <string key="org:resource" value="Specialist Actor 44"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_approved"/>
+      <string key="org:resource" value="Specialist Actor 43"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_registered"/>
+      <string key="org:resource" value="Specialist Actor 44"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_activated"/>
+      <string key="org:resource" value="Specialist Actor 43"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_accepted"/>
+      <string key="org:resource" value="Specialist Actor 44"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 43"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_start"/>
+      <string key="org:resource" value="Specialist Actor 44"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_declined"/>
+      <string key="org:resource" value="Specialist Actor 43"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 44"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_start"/>
+      <string key="org:resource" value="Specialist Actor 43"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_approved"/>
+      <string key="org:resource" value="Specialist Actor 44"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_registered"/>
+      <string key="org:resource" value="Specialist Actor 43"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_activated"/>
+      <string key="org:resource" value="Specialist Actor 44"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_accepted"/>
+      <string key="org:resource" value="Specialist Actor 43"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 44"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_wijzigen_contractgegevens_schedule"/>
+      <string key="org:resource" value="Specialist Actor 43"/>
+    </event>
+  </trace>
+  <trace>
+    <event>
+      <string key="concept:name" value="A_submitted"/>
+      <string key="org:resource" value="Specialist Actor 45"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_partlysubmitted"/>
+      <string key="org:resource" value="Customer Service Actor 113"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_preaccepted"/>
+      <string key="org:resource" value="Customer Service Actor 112"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_scheduled"/>
+      <string key="org:resource" value="Customer Service Actor 111"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_start"/>
+      <string key="org:resource" value="Customer Service Actor 115"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_complete"/>
+      <string key="org:resource" value="Customer Service Actor 114"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_cancelled"/>
+      <string key="org:resource" value="Specialist Actor 46"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 45"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_start"/>
+      <string key="org:resource" value="Customer Service Actor 113"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_complete"/>
+      <string key="org:resource" value="Customer Service Actor 112"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_cancelled"/>
+      <string key="org:resource" value="Customer Service Actor 111"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_complete"/>
+      <string key="org:resource" value="Customer Service Actor 115"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_cancelled"/>
+      <string key="org:resource" value="Customer Service Actor 114"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 46"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_cancelled"/>
+      <string key="org:resource" value="Specialist Actor 45"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_complete"/>
+      <string key="org:resource" value="Customer Service Actor 113"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_cancelled"/>
+      <string key="org:resource" value="Customer Service Actor 112"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_complete"/>
+      <string key="org:resource" value="Customer Service Actor 111"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_start"/>
+      <string key="org:resource" value="Customer Service Actor 115"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_start"/>
+      <string key="org:resource" value="Customer Service Actor 115"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_cancelled"/>
+      <string key="org:resource" value="Customer Service Actor 114"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_created"/>
+      <string key="org:resource" value="Specialist Actor 46"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_sent"/>
+      <string key="org:resource" value="Specialist Actor 45"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_scheduled"/>
+      <string key="org:resource" value="Customer Service Actor 113"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_complete"/>
+      <string key="org:resource" value="Customer Service Actor 112"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_start"/>
+      <string key="org:resource" value="Customer Service Actor 111"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_complete"/>
+      <string key="org:resource" value="Customer Service Actor 115"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_cancelled"/>
+      <string key="org:resource" value="Customer Service Actor 114"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 46"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_start"/>
+      <string key="org:resource" value="Specialist Actor 45"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_cancelled"/>
+      <string key="org:resource" value="Customer Service Actor 113"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_created"/>
+      <string key="org:resource" value="Customer Service Actor 112"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_sent"/>
+      <string key="org:resource" value="Customer Service Actor 111"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_scheduled"/>
+      <string key="org:resource" value="Customer Service Actor 115"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_complete"/>
+      <string key="org:resource" value="Customer Service Actor 114"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_cancelled"/>
+      <string key="org:resource" value="Specialist Actor 46"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 45"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_cancelled"/>
+      <string key="org:resource" value="Customer Service Actor 113"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_complete"/>
+      <string key="org:resource" value="Customer Service Actor 112"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_start"/>
+      <string key="org:resource" value="Customer Service Actor 111"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_complete"/>
+      <string key="org:resource" value="Customer Service Actor 115"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_start"/>
+      <string key="org:resource" value="Customer Service Actor 114"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_cancelled"/>
+      <string key="org:resource" value="Specialist Actor 46"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_created"/>
+      <string key="org:resource" value="Specialist Actor 45"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_sent"/>
+      <string key="org:resource" value="Customer Service Actor 113"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_scheduled"/>
+      <string key="org:resource" value="Customer Service Actor 112"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_completeven_aanvraag_complete"/>
+      <string key="org:resource" value="Customer Service Actor 111"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_offertes_start"/>
+      <string key="org:resource" value="Customer Service Actor 115"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_cancelled"/>
+      <string key="org:resource" value="Customer Service Actor 114"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_created"/>
+      <string key="org:resource" value="Specialist Actor 46"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_sent"/>
+      <string key="org:resource" value="Specialist Actor 45"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_scheduled"/>
+      <string key="org:resource" value="Customer Service Actor 113"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 46"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_start"/>
+      <string key="org:resource" value="Specialist Actor 45"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_nabellen_incomplete_dossiers_complete"/>
+      <string key="org:resource" value="Customer Service Actor 113"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_start"/>
+      <string key="org:resource" value="Specialist Actor 46"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_declined"/>
+      <string key="org:resource" value="Specialist Actor 45"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 46"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_start"/>
+      <string key="org:resource" value="Specialist Actor 45"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_approved"/>
+      <string key="org:resource" value="Specialist Actor 46"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_registered"/>
+      <string key="org:resource" value="Specialist Actor 45"/>
+    </event>
+    <event>
+      <string key="concept:name" value="A_activated"/>
+      <string key="org:resource" value="Specialist Actor 46"/>
+    </event>
+    <event>
+      <string key="concept:name" value="O_accepted"/>
+      <string key="org:resource" value="Specialist Actor 45"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_valideren_aanvraag_complete"/>
+      <string key="org:resource" value="Specialist Actor 46"/>
+    </event>
+    <event>
+      <string key="concept:name" value="W_wijzigen_contractgegevens_schedule"/>
+      <string key="org:resource" value="Specialist Actor 45"/>
+    </event>
+  </trace>
+</log>
