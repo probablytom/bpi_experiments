@@ -43,10 +43,11 @@ class TestCompetence(unittest.TestCase):
     def test_multiple_traces_consistent_actors(self):
 
         construct_universe()
-        ticks = 250
+        ticks = 350
         run_model(([
-            (ExperimentAdvice, 'all workflows', list(), dict()),
+            # (ActAbovePermissions, 'get_next_task', list(), dict()),
             (CompetenceModel, 'get_next_task', [0.05, ticks/2], dict()),
+            (ExperimentAdvice, 'all workflows', list(), dict()),
             (NewTasksOnEnd, 'end', list(), dict()),
         ]),
             num_start_messages=1,
@@ -63,7 +64,6 @@ class TestCompetence(unittest.TestCase):
 
         generate_XES()
         generate_CSV()
-
 
 if __name__ == '__main__':
     unittest.main()

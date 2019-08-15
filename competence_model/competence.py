@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 from math import exp
 from drawer import AdviceBuilder
 from random import random
-from bpi_13_experimental_frontend import action_log, log_fuzz, company, new_trace, experimental_environment
+from bpi_13_experimental_frontend import action_log, log_fuzz, company, new_trace, experimental_environment, SpecialistWorkflow, specialists, CustomerServiceActor
 from functools import partial
 
 
@@ -27,7 +27,19 @@ class ExperimentAdvice(object):
             ExperimentAdvice.invoked_count += not ExperimentAdvice.invoked  # Increment if it's not been invoked yet.
             ExperimentAdvice.invoked = True
 
-        attribute(*args, **kwargs)
+        if actor.mistake_to_make is not None and actor.mistake_to_make[0] == 'around' \
+                and attribute.func_name is not "END" and attribute.func_name is not "START":
+            func_to_run = actor.mistake_to_make[1]
+            fuzzing_name_label = actor.mistake_to_make[2]
+            func_to_run(attribute, actor, *args, **kwargs)
+
+            log_fuzz(fuzzing_name_label, attribute.func_name, actor.actor_name)
+
+            actor.mistake_to_make = None
+            ExperimentAdvice.invoked_count += not ExperimentAdvice.invoked  # Increment if it's not been invoked yet.
+            ExperimentAdvice.invoked = True
+        else:
+            attribute(*args, **kwargs)
 
         if actor.mistake_to_make is not None and actor.mistake_to_make[0] == 'after'\
                     and attribute.func_name is not "END" and attribute.func_name is not "START":
@@ -45,16 +57,19 @@ class ExperimentAdvice(object):
 class NewTasksOnEnd(object):
     def encore(self, _attribute, _actor, _result):
         company.recieve_message('start')
-        if not ExperimentAdvice.invoked:
-            action_log.pop()
-            if 'fuzzed tasks' in experimental_environment.keys() and experimental_environment['fuzzed tasks'][-1] == []:
-                experimental_environment['fuzzed tasks'].pop()
+        # if not ExperimentAdvice.invoked:
+        #     action_log.pop()
+        #     if 'fuzzed tasks' in experimental_environment.keys() and experimental_environment['fuzzed tasks'][-1] == []:
+        #         experimental_environment['fuzzed tasks'].pop()
         new_trace()
         ExperimentAdvice.invoked = False
 
 
 def remove_previous_action(_, __):
     action_log[-1].pop()
+
+def repeat_step(attribute, actor):
+    action_log[-1].append(action_log[-1][-1])
 
 
 mistake_points = []
@@ -90,9 +105,11 @@ class CompetenceModel(object):
         if not hasattr(actor, 'last_mistake_made'):
             setattr(actor, 'last_mistake_made', 0)
         if not hasattr(actor, 'carefulness'):
-            setattr(actor, 'carefulness', 3)
+            setattr(actor, 'carefulness', 10)
         if not hasattr(actor, 'mistake_to_make'):
             setattr(actor, 'mistake_to_make', None)
+        if not hasattr(actor, 'number_above_permissions'):
+            setattr(actor, 'number_above_permissions', 0)
 
         # If the actor has previously generated a new task, with a
         #  ...cost via `au`, we count the experiences of the task now.
@@ -121,7 +138,14 @@ class CompetenceModel(object):
                 actor.last_mistake_made = sum(actor.experiences)
 
                 # Set the actor to actually make a mistake
-                actor.mistake_to_make = ('after', remove_previous_action, 'skip step')
+                if percentage_competence < 0.5:
+                    actor.mistake_to_make = ('after', repeat_step, 'repeat step')
+                else:
+                    if isinstance(actor, CustomerServiceActor):
+                        actor.number_above_permissions += 1
+                    else:
+                        actor.mistake_to_make = ('after', remove_previous_action, 'skip step')
+
 
                 # Plotting, can safely remove
                 if actor.actor_name == 'Customer Service Actor 5' and CompetenceModel.show_graphs:
@@ -135,13 +159,50 @@ class CompetenceModel(object):
 
 
         # * Run the actual attribute (in our case, `get_next_task`)
-        curr_task = attribute(*args, **kwargs)
+        if actor.number_above_permissions > 0:
+            specialists.add_member(actor)
+            curr_task = attribute(*args, **kwargs)
+            if type(curr_task) is str:
+                actor.number_above_permissions -= 1
+                for name, method in SpecialistWorkflow.__dict__.items():
+                    if name.lower() == curr_task:
+                        curr_task = partial(method, actor)
+                        task_name = name
+
+                # Log the abnormality
+                log_fuzz('acting above permissions', task_name, actor.actor_name)
+
+
+            actor.troupes.remove(specialists)
+
+        else:
+            curr_task = attribute(*args, **kwargs)
 
         # * Encore
         actor.curr_task = curr_task
 
         # We have to return the value from the task
         return curr_task
+
+# class ActAbovePermissions(object):
+#     def around(self, attribute, actor, *args, **kwargs):
+#         '''
+#
+#         :param actor:
+#         :param attribute:
+#         :param args:
+#         :param kwargs:
+#         :return:
+#         '''
+#         if not hasattr(actor, 'mistake_to_make'):
+#             setattr(actor, 'mistake_to_make', None)
+#
+#         if actor.mistake_to_make is not None and actor.mistake_to_make[2] == 'acting outside permissions':
+#
+#         else:
+#             curr_task = attribute(*args, **kwargs)
+#
+#         return curr_task
 
 
 def basic_sigmoid(genius=0.1, learning_point = 50):
