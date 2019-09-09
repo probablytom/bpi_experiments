@@ -47,6 +47,7 @@ class TestCompetence(unittest.TestCase):
 
         construct_universe()
         ticks = 350
+
         iterations = 5
         simulate = partial(run_model,
                            ([
@@ -70,6 +71,7 @@ class TestCompetence(unittest.TestCase):
 
         self.play_simulation(simulate, discard_work=True)
         self.play_simulation(simulate, discard_work=False)
+
 
         # We also stopped halfway through a simulation...so unless the last action in the last action log is one the simulation should end on, we should remove that trace (and its fuzzing effects)
         try:

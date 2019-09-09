@@ -69,6 +69,9 @@ class NewTasksOnEnd(object):
 def remove_previous_action(_, __):
     action_log[-1].pop()
 
+def repeat_step(attribute, actor):
+    action_log[-1].append(action_log[-1][-1])
+
 
 def repeat_step(_, __):
     action_log[-1].append(action_log[-1][-1])
@@ -112,6 +115,7 @@ class CompetenceModel(object):
             setattr(actor, 'mistake_to_make', None)
         if not hasattr(actor, 'number_above_permissions'):
             setattr(actor, 'number_above_permissions', 0)
+<<<<<<< HEAD
         if not hasattr(actor, 'retirement_exp'):
             setattr(actor, 'retirement_exp', 2 * self.learning_point - round(random() * self.learning_point * choice([-1,1])) )
         if not hasattr(actor, 'retired'):
@@ -135,6 +139,8 @@ class CompetenceModel(object):
 
             return actor.idle
 
+=======
+>>>>>>> ffd794b520fdcd1187d55b3daef95b0b25a02702
 
         # If the actor has previously generated a new task, with a
         #  ...cost via `au`, we count the experiences of the task now.
