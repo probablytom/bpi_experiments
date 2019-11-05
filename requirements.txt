@@ -1,3 +1,4 @@
+pydysofu
 -e git://github.com/probablytom/bpi_13_python.git#egg=bpi_13_python
 matplotlib
 drawer

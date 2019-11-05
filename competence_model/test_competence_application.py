@@ -51,7 +51,6 @@ class TestCompetence(unittest.TestCase):
         iterations = 5
         simulate = partial(run_model,
                            ([
-                               # (ActAbovePermissions, 'get_next_task', list(), dict()),
                                (CompetenceModel, 'get_next_task', [0.05*iterations, ticks/2/iterations], dict()),
                                (ExperimentAdvice, 'all workflows', list(), dict()),
                                (NewTasksOnEnd, 'end', list(), dict()),
@@ -106,6 +105,50 @@ class TestCompetence(unittest.TestCase):
             bpi_13_experimental_frontend.reps.troupe_work_queue = Queue()
             bpi_13_experimental_frontend.specialists.troupe_work_queue = Queue()
 
+
+    def test_massive_data_gen(self):
+        construct_universe()
+        ticks = 350
+
+        iterations = 5
+        simulate = partial(run_model,
+                           ([
+                               (CompetenceModel, 'get_next_task', [0.05*iterations, ticks/2/iterations], dict()),
+                               (ExperimentAdvice, 'all workflows', list(), dict()),
+                               (NewTasksOnEnd, 'end', list(), dict()),
+                           ]),
+                           num_start_messages=1,
+                           num_ticks=ticks
+                           )
+        # run_model(([
+        #     # (ActAbovePermissions, 'get_next_task', list(), dict()),
+        #     (CompetenceModel, 'get_next_task', [0.05*iterations, ticks/2/iterations], dict()),
+        #     (ExperimentAdvice, 'all workflows', list(), dict()),
+        #     (NewTasksOnEnd, 'end', list(), dict()),
+        # ]),
+        #     num_start_messages=1,
+        #     num_ticks=ticks,
+        # )
+
+        self.play_simulation(simulate, discard_work=True)
+        while len(action_log) < 10000:
+            self.play_simulation(simulate, discard_work=False)
+            print(len(action_log))
+
+
+        # We also stopped halfway through a simulation...so unless the last action in the last action log is one the simulation should end on, we should remove that trace (and its fuzzing effects)
+        try:
+            if action_log[-1][-1] != "A_declined" \
+                    and action_log[-1][-1] != "W_beoordelen_fraude_complete" \
+                    and action_log[-1][-1] != "W_wijzigen_contractgegevens_schedule":
+                action_log.pop()
+                if len(experimental_environment["fuzzed tasks"]) != len(action_log):
+                    experimental_environment["fuzzed tasks"].pop()
+        except:
+            pass
+
+        generate_XES(log_path="10000.xes")
+        generate_CSV(csv_path="10000.csv")
 
 
 if __name__ == '__main__':

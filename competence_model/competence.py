@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 from math import exp
 from drawer import AdviceBuilder
-from bpi_13_experimental_frontend import action_log, log_fuzz, company, new_trace, SpecialistWorkflow, specialists, CustomerServiceActor, set_up_new_actor, SpecialistActor, reps
+from bpi_13_experimental_frontend import action_log, log_fuzz, company, new_trace, SpecialistWorkflow, specialists, CustomerServiceActor, set_up_new_actor, SpecialistActor, reps, old_man_time
 from functools import partial
 from random import random, choice
 
@@ -115,7 +115,6 @@ class CompetenceModel(object):
             setattr(actor, 'mistake_to_make', None)
         if not hasattr(actor, 'number_above_permissions'):
             setattr(actor, 'number_above_permissions', 0)
-<<<<<<< HEAD
         if not hasattr(actor, 'retirement_exp'):
             setattr(actor, 'retirement_exp', 2 * self.learning_point - round(random() * self.learning_point * choice([-1,1])) )
         if not hasattr(actor, 'retired'):
@@ -126,21 +125,23 @@ class CompetenceModel(object):
             # When retired, we spawn a replacement actor.
             if not actor.retired:
                 actor.retired = True
-                # Check to see what kind of actor we need to replace
+                pass
+                # Check to see what kind of actor we need to replace, and set them up properly.
                 isSpecialist = actor.actor_name[0] == 'S'
                 if isSpecialist:
                     set_up_new_actor(SpecialistActor, specialists)
                 else:
                     set_up_new_actor(CustomerServiceActor, reps)
 
-                # Add to the relevant troupes (and the global clock)!
 
+                # Remove this actor from the clock.
+                for listener in old_man_time.listeners.keys():
+                    if listener.gi_frame.f_locals['self'].actor_name == actor.actor_name:
+                        old_man_time.listeners.pop(listener)
 
-
+            # Do nothing on the final tick.
             return actor.idle
 
-=======
->>>>>>> ffd794b520fdcd1187d55b3daef95b0b25a02702
 
         # If the actor has previously generated a new task, with a
         #  ...cost via `au`, we count the experiences of the task now.
